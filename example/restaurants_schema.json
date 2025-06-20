@@ -1,0 +1,12 @@
+{
+  "indexName": "restaurants",
+  "field":
+  [
+    { "name": "id", "type": "ATOM", "search": true, "storeDocValues": true},
+    { "name": "name", "type": "TEXT" , "search": true, "store": true},
+    { "name": "menu",  "type": "TEXT", "search": true, "multiValued": true, "store": true},
+    {"name": "reviews", "type": "TEXT", "search": true, "multiValued": true, "store": true},
+    { "name":  "rating", "type":  "DOUBLE", "search": true, "storeDocValues": true},
+    { "name":  "location", "type":  "LAT_LON", "search": true, "storeDocValues": true}
+  ]
+}

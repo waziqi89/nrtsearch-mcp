@@ -1,0 +1,20 @@
+{
+  "indexName": "restaurants",
+  "topHits": 5,
+  "query": {
+    "booleanQuery": {
+      "clauses": [
+        {
+          "query": {
+          "rangeQuery": {
+            "field": "rating",
+            "lower": "4.1"
+          }
+          },
+          "occur": "FILTER"
+        }
+      ]
+    }
+  },
+  "retrieveFields": ["*"]
+}
