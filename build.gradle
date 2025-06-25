@@ -27,7 +27,7 @@ dependencies {
     implementation "com.yelp.nrtsearch:clientlib:${nrtsearchVersion}"
     runtimeOnly "io.grpc:grpc-netty-shaded:1.66.0"
 
-    implementation 'org.springframework.ai:spring-ai-starter-mcp-server'
+    implementation 'org.springframework.ai:spring-ai-starter-mcp-server-webmvc'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
